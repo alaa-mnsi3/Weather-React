@@ -24,4 +24,6 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(26, 25, 25);
+    color: #ddd;
+    letter-spacing: .1rem;
 }
