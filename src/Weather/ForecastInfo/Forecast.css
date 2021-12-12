@@ -1,0 +1,55 @@
+.Forecast-sec
+{
+    display: flex;
+    padding: 1rem;
+    background-color: rgb(150, 103, 103);
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, .5),1px 1px 3px rgba(255, 255, 255, .5);
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    color: #ddd;
+    overflow:hidden;
+    width: 50%;
+    z-index: 4;
+}
+@media only screen and (max-width:1200px) {
+    .Forecast-sec
+    {
+        width: 60%;
+    }
+}
+@media only screen and (max-width:850px) {
+    .Forecast-sec
+    {
+        width: 70%;
+    }
+}
+@media only screen and (max-width:670px) {
+    .Forecast-sec
+    {
+        width: 80%;
+    }
+}
+@media only screen and (max-width:550px) {
+    .Forecast-sec
+    {
+        width: 95%;
+    }
+}
+.Forecast-sec:hover
+{
+    overflow-x: scroll;
+}
+
+.Forecast-sec-item
+{
+    margin-right: 1rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    padding: .3rem;
+    border-radius: 10px;
+}
+.Forecast-sec-item:hover
+{
+    background-color: rgb(185, 140, 140);
+}

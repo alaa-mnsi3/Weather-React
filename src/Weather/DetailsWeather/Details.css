@@ -1,0 +1,114 @@
+.Details-sec
+{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: rgb(163, 132, 132);
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, .5),1px 1px 3px rgba(255, 255, 255, .5);
+    width: 50%;
+    border-radius: 20px;
+    color: #ddd;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+@media only screen and (max-width:1200px) {
+    .Details-sec{
+        width: 60%;
+    }
+}
+@media only screen and (max-width:850px) {
+    .Details-sec{
+        width: 70%;
+    }
+}
+@media only screen and (max-width:670px) {
+    .Details-sec{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:550px) {
+    .Details-sec{
+        width: 95%;
+    }
+}
+.Details-sec-img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
+    z-index: -1;
+}
+.Details-sec::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(94, 60, 60, 0.5);
+}
+.Details-sec-img > img
+{
+    width: 100%;
+    height: 100%;
+}
+.Details-sec1>h3
+{
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    color: rgb(114, 62, 62);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.Details-sec1>h4 , .Details-sec2 > p ,.Details-sec3 > p
+{
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    color: rgba(231, 231, 231, 0.733);
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: .3rem;
+}
+.Details-sec2
+{
+    text-align: center;
+}
+.Details-sec3
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+}
+.Details-sec3>p:first-of-type
+{
+    justify-self: flex-start;
+    height: 100%;
+}
+.Details-sec3>p:last-of-type
+{
+    font-size: 5rem;
+}
+@media only screen and (max-width:550px) {
+    .Details-sec3>p:last-of-type
+    {
+        font-size: 4rem;
+    }
+}
+.temp-min
+{
+    margin-right:1rem ;
+}
+@media only screen and (max-width:550px) {
+    .temp-min{
+        margin-right:.3rem ;
+    }
+}

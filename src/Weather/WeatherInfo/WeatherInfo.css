@@ -1,0 +1,79 @@
+.Weather-info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(26, 25, 25) ;
+    color: rgb(139, 137, 137);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.Weather-info::after
+{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.Weather-info-sec1
+{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.Weather-info-sec1>h1
+{
+    color:rgb(219, 152, 152);
+    font-size:1.5rem;
+    font-weight:700;
+    margin-bottom: 1rem;
+    z-index: 4;
+}
+.SearchAginbtn
+{
+    border: none;
+    outline: none;
+    padding: 1rem .5rem;
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(143, 98, 98);
+    color: #ddd;
+    width: 200px;
+    letter-spacing: .1rem;
+    border-radius: 10px;
+    font-size: .9rem;
+    font-weight: 600;
+    --border-size:2px;
+    z-index: 1;
+}
+.SearchAginbtn::after
+{
+    content:'';
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-radius: 10px;
+    border:var(--border-size) solid rgb(143, 98, 98);
+    z-index: -1;
+    position: absolute;
+    background-color: transparent;
+
+    transition:all 500ms ease-in-out ;
+}
+.SearchAginbtn:hover::after,
+.SearchAginbtn:focus::after
+{
+    top:calc(var(--border-size)*-2);
+    left:calc(var(--border-size)*-2);
+    right:calc(var(--border-size)*-2);
+    bottom:calc(var(--border-size)*-2);
+}

@@ -1,0 +1,76 @@
+.SearchForm
+{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(26, 25, 25);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.SearchForm > input
+{
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(163, 132, 132);
+    color: rgb(139, 137, 137);
+    width: 50%;
+    margin-bottom: 2rem;
+    padding: .5rem;
+}
+@media only screen and (max-width:1200px) {
+    .SearchForm > input{
+        width: 60%;
+    }
+}
+@media only screen and (max-width:850px) {
+    .SearchForm > input{
+        width: 70%;
+    }
+}
+@media only screen and (max-width:670px) {
+    .SearchForm > input{
+        width: 80%;
+    }
+}
+
+.SearchForm > button
+{
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    background-color: rgb(163, 132, 132);
+    color: rgb(139, 137, 137);
+    padding: .7rem;
+    width: 200px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    --border-size:2px;
+}
+.SearchForm > button::after
+{
+    content: '';
+    position: absolute;
+    border:var(--border-size) solid rgb(163, 132, 132);
+    top:0px;
+    left:0px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all 500ms ease-in-out;
+}
+.SearchForm > button:hover::after,
+.SearchForm > button:focus::after
+{
+    top:calc(var(--border-size)*-2);
+    left:calc(var(--border-size)*-2);
+    right:calc(var(--border-size)*-2);
+    bottom: calc(var(--border-size)*-2);
+}
