@@ -79,7 +79,7 @@ class App extends PureComponent {
         list={list}
         indexList={indexList}
         city={city}
-        />:<div>{errorMsg}</div>}
+        />:<div className="error">{errorMsg}</div>}
       </WeatherProvider>
     )
   }

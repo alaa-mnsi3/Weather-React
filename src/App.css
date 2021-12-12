@@ -15,3 +15,13 @@
     align-items: center;
     background-color: rgb(26, 25, 25);
 }
+.error
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 25, 25);
+}
