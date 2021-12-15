@@ -51,7 +51,6 @@
     border-radius: 10px;
     font-size: .9rem;
     font-weight: 600;
-    --border-size:2px;
     z-index: 1;
 }
 .SearchAginbtn::after
@@ -62,7 +61,7 @@
     right:0;
     bottom:0;
     border-radius: 10px;
-    border:var(--border-size) solid rgb(143, 98, 98);
+    border:(2px) solid rgb(143, 98, 98);
     z-index: -1;
     position: absolute;
     background-color: transparent;
@@ -72,8 +71,8 @@
 .SearchAginbtn:hover::after,
 .SearchAginbtn:focus::after
 {
-    top:calc(var(--border-size)*-2);
-    left:calc(var(--border-size)*-2);
-    right:calc(var(--border-size)*-2);
-    bottom:calc(var(--border-size)*-2);
+    top:calc((2px)*-2);
+    left:calc((2px)*-2);
+    right:calc((2px)*-2);
+    bottom:calc((2px)*-2);
 }

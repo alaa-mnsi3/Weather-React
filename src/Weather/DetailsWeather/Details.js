@@ -6,6 +6,8 @@ import './Details.css'
 function Details({item,index})
 {
   const Details=useContext(WeatherContext)
+  let dateTime =item.dt_txt.split(' ');
+  let date= dateTime[0].split('-')
     return(
       <React.Fragment>
         {index === Details.indexList?
@@ -20,7 +22,7 @@ function Details({item,index})
               <h4>{Details.week[new Date(item.dt_txt).getDay()]}</h4>
               <h4>
                 {
-                  ('0' + (new Date(item.dt_txt).getDay()+1)).slice(-2)+'/'+ ('0' + new Date(item.dt_txt).getMonth()).slice(-2) +'/'+new Date(item.dt_txt).getFullYear()
+                  ((date[2]))+' / '+ ('0' + date[1]).slice(-2) +' / '+ (date[0])
                 }
               </h4>
               <h4>{`wind ${item.wind.speed} km/h`}</h4>

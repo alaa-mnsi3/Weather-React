@@ -53,7 +53,7 @@ class App extends PureComponent {
     .then(res=>
       this.setState({
         list : res.data.list
-      },))
+      },console.log(this.state.list)))
     .catch(err=>
       this.setState({
         errorMsg:'please make sure of city and your connection to network'

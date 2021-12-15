@@ -1,5 +1,5 @@
 import React from 'react';
-import './Seach.css'
+import './Seach.css';
 
 function Search ({onSubmit}) {
 

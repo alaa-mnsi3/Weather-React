@@ -1,4 +1,4 @@
-.SearchForm
+.SearchForm 
 {
     display: flex;
     width: 100vw;
@@ -50,13 +50,12 @@
     border-radius: 10px;
     position: relative;
     z-index: 1;
-    --border-size:2px;
 }
 .SearchForm > button::after
 {
     content: '';
     position: absolute;
-    border:var(--border-size) solid rgb(163, 132, 132);
+    border:2px solid rgb(163, 132, 132);
     top:0px;
     left:0px;
     right: 0;
@@ -66,11 +65,10 @@
     background-color: transparent;
     transition: all 500ms ease-in-out;
 }
-.SearchForm > button:hover::after,
-.SearchForm > button:focus::after
-{
-    top:calc(var(--border-size)*-2);
-    left:calc(var(--border-size)*-2);
-    right:calc(var(--border-size)*-2);
-    bottom: calc(var(--border-size)*-2);
-}
+    .SearchForm > button:hover::after,
+    .SearchForm > button:focus::after {
+        top: calc((2px) *-2);
+        left: calc((2px)*-2);
+        right: calc((2px)*-2);
+        bottom: calc((2px)*-2);
+    }
