@@ -47,7 +47,7 @@ class App extends PureComponent {
   }  
   componentDidUpdate()
   {
-    const apiKey='dea886ab571fa9ba5defd3fe2cb73358'
+    const apiKey='c00cca645196f43959e6a78d0ae0bdaa'
     let {city} = this.state
     axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`)
     .then(res=>
